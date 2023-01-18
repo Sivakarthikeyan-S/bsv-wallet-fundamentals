@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BSV - SHA256 hash</title>
+    <script type="text/javascript" src="https://unpkg.com/bsv@1.5.3/bsv.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+    <div id="block1">
+        <h1>Your SHA256 hash is:</h1> 
+        <p id="privText"> </p>
+    </div>
+      
+    <script> 
+        var hash = CryptoJS.SHA256("bitcoin");
+
+        var p = document.querySelector("#privText");
+        p.innerHTML = hash.toString();
+    </script>
+</body>
+</html>
