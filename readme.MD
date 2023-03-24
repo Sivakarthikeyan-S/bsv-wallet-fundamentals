@@ -28,3 +28,7 @@ bytes  = CryptoJS.AES.decrypt(ciphertext, password);
 originalText = bytes.toString(CryptoJS.enc.Utf8);
 ```
 [ Decrypted Key: originalText.toString() ]
+
+# Bitcoin Address Insights:
+
+![This is an image](https://i.pinimg.com/originals/4a/f0/c9/4af0c988a05e3607a6dfe6a49c2c4b45.png)
