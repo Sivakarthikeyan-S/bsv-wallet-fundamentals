@@ -39,6 +39,29 @@ originalText = bytes.toString(CryptoJS.enc.Utf8);
 var addressCode = 'bitcoinsv:' + address;
 
 new QRCode(document.getElementById("qrcode"), addressCode);
+
+```
+
+# WhatsOnChain API:
+
+![This is an image](https://i.pinimg.com/originals/11/37/1f/11371f9875d8db91a66bc29aafee88ca.png)
+
+
+```
+
+    var config = {
+        method: 'get',
+        url: "https://api.whatsonchain.com/v1/bsv/main/exchangerate",
+    };
+
+    axios(config)
+    .then(function (response) {
+    console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+    console.log(error);
+    });
+
 ```
 
 
