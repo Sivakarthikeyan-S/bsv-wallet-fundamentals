@@ -54,14 +54,17 @@ new QRCode(document.getElementById("qrcode"), addressCode);
         url: "https://api.whatsonchain.com/v1/bsv/main/exchangerate",
     };
 
-    axios(config)
-    .then(function (response) {
-    console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-    console.log(error);
-    });
+```
 
+# Wallet with Balance:
+
+```
+
+    var config = {
+        method: 'get',
+        url: "https://api.whatsonchain.com/v1/bsv/main/address/" + address + "/balance",
+    };
+    
 ```
 
 
