@@ -67,6 +67,42 @@ new QRCode(document.getElementById("qrcode"), addressCode);
     
 ```
 
+# Hierarchial Deterministic Keys(HDKs) :
+
+- randomly generate a HD private key
+- get the corresponding HD public key
+- derive regular private and public keys from a HD key pair
+
+# HD Private Keys :
+
+```
+
+hdPrivateKey = bsv.HDPrivateKey.fromRandom();
+
+```
+
+- hdPrivateKey.toString();
+
+# HD Public Keys :
+
+```
+
+hdPublicKey = bsv.HDPublicKey(hdPrivateKey);
+
+```
+
+- hdPublicKey.toString();
+
+# Regular Key Pairs from HD Keys :
+
+```
+
+publicKey1 = hdPublicKey.publicKey.toString();
+
+privateKey1 = hdPrivateKey.privateKey.toString();
+
+```
+
 
 # Packages:
 
