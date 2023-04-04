@@ -103,6 +103,22 @@ privateKey1 = hdPrivateKey.privateKey.toString();
 
 ```
 
+# Get an address from xprv: 
+
+```
+
+    var hdPrivateKey = bsv.HDPrivateKey.fromString("{xprvkey}")
+    
+    var privateKeyStandard = hdPrivateKey.deriveChild("m/44'/0'/0'");
+    
+    var hdPublicKey = bsv.HDPublicKey.fromHDPrivateKey(privateKeyStandard);
+    
+    var publicKey = hdPublicKey.publicKey;
+    
+    var address = bsv.Address.fromPublicKey(publicKey);
+
+```
+
 
 # Packages:
 
