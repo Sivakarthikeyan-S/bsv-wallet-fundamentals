@@ -119,6 +119,18 @@ privateKey1 = hdPrivateKey.privateKey.toString();
 
 ```
 
+# Mnemonic Phrase:
+
+- A Mnemonic Phrase, otherwise known as a bitcoin seed phrase.
+- It is a list of words which store all the information needed to recover access to a bitcoin wallet.
+
+```
+
+var Mnemonic = window.bsvMnemonic;
+
+var Mnemonic1 = Mnemonic.fromRandom();
+
+```
 
 # Packages:
 
@@ -128,5 +140,7 @@ privateKey1 = hdPrivateKey.privateKey.toString();
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
     
     <script type="text/javascript" src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/bsv@1.5.3/bsv-mnemonic.min.js"></script>
 
 ```
