@@ -144,3 +144,19 @@ var Mnemonic1 = Mnemonic.fromRandom();
     <script type="text/javascript" src="https://unpkg.com/bsv@1.5.3/bsv-mnemonic.min.js"></script>
 
 ```
+
+# A Complete Wallet Workshop : 
+
+ A Complete Wallet Workshop [Project](https://github.com/Kohze/WalletWorkshopProject/)
+
+ This Project contains :
+
+ - Mnemonic Phrase (BIP 39)
+ - HD PrivateKey
+ - derivation path selection
+ - Private Key
+ - Public Key
+ - Address
+ - QR Code
+
+ [Download Project](https://github.com/Kohze/WalletWorkshopProject/archive/refs/heads/main.zip)
